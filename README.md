@@ -27,7 +27,9 @@ minimise anything -minimises app to tiny window
 saveSettings anything
 recallSaved anything
 
-Settings dependant on camera number - replay Camera Number in address with the camera ID
+Settings dependant on camera number - replace Camera Number in address with the camera ID
+
+
 "/Camera Number/gain int 0-63"
 
 "/Camera Number/draw int 0 -255"
@@ -68,7 +70,7 @@ Key Commands
 
 ‘r’ recall saved settings
 
-
+	
 
 Updates- 
 
