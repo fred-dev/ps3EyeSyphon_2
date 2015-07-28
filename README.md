@@ -69,7 +69,6 @@ Key Commands
 ‘r’ recall saved settings
 
 
-This evaluation version will run for 5 minutes and then quit
 
 Updates- 
 
