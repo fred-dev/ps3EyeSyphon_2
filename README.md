@@ -59,10 +59,15 @@ OSC controls output
 Set IP address and port with XML settings
 
 Key Commands
+
 ‘g’ show or hide GUI controls
+
 ‘m’ Toggle tiny mode
+
 ’s’ Save settings
+
 ‘r’ recall saved settings
+
 
 This evaluation version will run for 5 minutes and then quit
 
