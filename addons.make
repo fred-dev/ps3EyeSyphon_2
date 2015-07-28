@@ -1,0 +1,6 @@
+ofxGui
+ofxKinect
+ofxOsc
+ofxXmlSettings
+ofxPS3EyeGrabber
+ofxSynth
