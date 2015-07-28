@@ -68,10 +68,16 @@ This evaluation version will run for 5 minutes and then quit
 
 Updates- 
 	•	Allows for frame size to be set
+
 	•	Sends all settings via OSC
+
 	•	New Tiny mode to save screen real estate
+
 	•	Now app is 64bit
+
 	•	Better frame rates (single camera at 320*240 will run at 200 fps depending on your computer)**
+
 	•	App requires OS X 10.10 
+	
 
 ** Your graphics card may not be able to deliver 200 fps through syphon and depending on the syphon implementation you use this may be too fast. to save CPU cycles and video memory set a lower framerate in the settings file.
