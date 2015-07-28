@@ -74,8 +74,8 @@ void ofApp::setup(){
     }
     
     camCounter=deviceList.size();
+
     
-    
 }
 
 
