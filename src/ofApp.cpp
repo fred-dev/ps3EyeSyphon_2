@@ -81,13 +81,7 @@ void ofApp::setup(){
 
 void ofApp::update(){
     
-    if (ofGetElapsedTimeMillis()>300000) {
-        ofSystemAlertDialog("Evaluation time is up");
-    }
-    
-    if (ofGetElapsedTimeMillis()>302000) {
-        ofExit();
-    }
+
     
     if (camCounter>0) {
         for (int i = 0; i < cameras.size(); i++) {

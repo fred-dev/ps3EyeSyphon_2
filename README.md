@@ -11,12 +11,12 @@ https://github.com/bakercp/ofxPS3EyeGrabber/branches
 
 XML Settings (inside bin/data) change the values as needed
 
-<CAMWIDTH>320</CAMWIDTH>
-<CAMHEIGHT>240</CAMHEIGHT>
-<FRAMERATE>20</FRAMERATE>
-<RECIEVEPORT>1234</RECIEVEPORT>
-<SENDPORT>1235</SENDPORT>
-<SENDIP>127.0.0.1</SENDIP>
+"<CAMWIDTH>320</CAMWIDTH>"
+"<CAMHEIGHT>240</CAMHEIGHT>"
+"<FRAMERATE>20</FRAMERATE>
+"<RECIEVEPORT>1234</RECIEVEPORT>"
+"<SENDPORT>1235</SENDPORT>"
+"<SENDIP>127.0.0.1</SENDIP>"
 
 
 OSC Controls input
@@ -28,18 +28,18 @@ saveSettings anything
 recallSaved anything
 
 Settings dependant on camera number - replay Camera Number in address with the camera ID
-/Camera Number/gain int 0-63
-/Camera Number/draw int 0 -255
-/Camera Number/exposure int 0 -255
-/Camera Number/sharpness" int 0 -255
-/Camera Number/brightness"int 0 -255
-/Camera Number/contrast"int 0 -255
-/Camera Number/hue"int 0 -255
-/Camera Number/blueBalance"int 0 -255
-/Camera Number/redBalance" int 0 -255
-/Camera Number/autoGain"int 0 or 1
-/Camera Number/autoWhiteBalance" int 0 or 1
-/Camera Number/flip" 2 ints vert 0 or 1, horizontal 0 or 1
+"/Camera Number/gain int 0-63"
+"/Camera Number/draw int 0 -255"
+"/Camera Number/exposure int 0 -255"
+"/Camera Number/sharpness" int 0 -255"
+"/Camera Number/brightness"int 0 -255"
+"/Camera Number/contrast"int 0 -255"
+"/Camera Number/hue"int 0 -255"
+"/Camera Number/blueBalance"int 0 -255"
+"/Camera Number/redBalance" int 0 -255"
+"/Camera Number/autoGain"int 0 or 1"
+"/Camera Number/autoWhiteBalance" int 0 or 1"
+"/Camera Number/flip" 2 ints vert 0 or 1, horizontal 0 or 1"
 
 Some controls are not available when with autoGain or autoBalance are on
 
