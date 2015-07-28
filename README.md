@@ -29,17 +29,29 @@ recallSaved anything
 
 Settings dependant on camera number - replay Camera Number in address with the camera ID
 "/Camera Number/gain int 0-63"
+
 "/Camera Number/draw int 0 -255"
+
 "/Camera Number/exposure int 0 -255"
+
 "/Camera Number/sharpness" int 0 -255"
+
 "/Camera Number/brightness"int 0 -255"
+
 "/Camera Number/contrast"int 0 -255"
+
 "/Camera Number/hue"int 0 -255"
+
 "/Camera Number/blueBalance"int 0 -255"
+
 "/Camera Number/redBalance" int 0 -255"
+
 "/Camera Number/autoGain"int 0 or 1"
+
 "/Camera Number/autoWhiteBalance" int 0 or 1"
+
 "/Camera Number/flip" 2 ints vert 0 or 1, horizontal 0 or 1"
+
 
 Some controls are not available when with autoGain or autoBalance are on
 
