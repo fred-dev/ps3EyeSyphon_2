@@ -1,7 +1,7 @@
 # ps3EyeSyphon_2
 Updated App for using multiple PS3Eye cameras with Syphon and OSC on OSX
 
-For a precompiled binary visit the releases section of this repo here https://github.com/fred-dev/ps3EyeSyphon_2/releases
+For a precompiled binary visit the releases section of this repo here https://github.com/fred-dev/ps3EyeSyphon_2/releases/tag/0.0.1.beta.1
 
 This version requires 
 
