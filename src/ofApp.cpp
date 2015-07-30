@@ -6,16 +6,17 @@ void ofApp::setup(){
     minimised=false;
     ofSetVerticalSync(false);
     
-    XML.loadFile("settings.xml");
-    camWidth		= XML.getValue("CAMWIDTH", 1920);
-    camHeight	= XML.getValue("CAMHEIGHT", 1080);
+    XML.loadFile("cameraSettings.xml");
+    camWidth		= XML.getValue("CAMWIDTH", 640);
+    camHeight	= XML.getValue("CAMHEIGHT", 480);
     frameRate	= XML.getValue("FRAMERATE", 60);
-    recievePort	= XML.getValue("RECIEVEPORT", 1234);
-    sendPort =XML.getValue("SENDPORT", 1235);
+    recievePort	= XML.getValue("RECIEVEPORT", 12334);
+    sendPort =XML.getValue("SENDPORT", 12335);
     sendIp = XML.getValue("SENDIP", "127.0.0.1");
     
     receiver.setup(recievePort);
     sender.setup(sendIp, sendPort);
+    bHide=false;
     
     
 //    QVGA - 15, 30, 60, 75, 100, 125, 200
@@ -30,6 +31,7 @@ void ofApp::setup(){
     }
     
     parameters.setName("settings");
+    gui.setup(parameters);
     
     for (int i = 0; i < deviceList.size(); i++) {
         
