@@ -17,11 +17,18 @@ https://github.com/astellato/ofxSyphon
 XML Settings (inside bin/data) change the values as needed
 
 "\<CAMWIDTH\>320\</CAMWIDTH\>"
+
 "\<CAMHEIGHT\>240\</CAMHEIGHT\>"
+
 "\<FRAMERATE\>20\</FRAMERATE\>
+
 "\<RECIEVEPORT\>1234\</RECIEVEPORT\>"
+
 "\<SENDPORT\>1235\</SENDPORT\>"
+
 "\<SENDIP\>127.0.0.1\</SENDIP\>"
+
+"\<MINIMISED\>0\</MINIMISED\>"
 
 
 OSC Controls input
