@@ -96,7 +96,7 @@ Updates-
 
 	•	Better frame rates (single camera at 320*240 will run at 200 fps depending on your computer)**
 
-	•	App requires OS X 10.10 
+	•	App requires OS X 10.9 + 
 
 
 ** Your graphics card may not be able to deliver 200 fps through syphon and depending on the syphon implementation you use this may be too fast. to save CPU cycles and video memory set a lower framerate in the settings file.
