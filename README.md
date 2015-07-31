@@ -1,5 +1,5 @@
 # ps3EyeSyphon_2
-Updated App for using multiple PS3Eye cameras with Syphon and OSC on OSX
+Updated App for using multiple PS3Eye cameras with Syphon and OSC on OSX 10.9 and 10.10
 
 For a precompiled binary visit the releases section of this repo here https://github.com/fred-dev/ps3EyeSyphon_2/releases/tag/0.0.1.beta.1
 
@@ -16,12 +16,12 @@ https://github.com/astellato/ofxSyphon
 
 XML Settings (inside bin/data) change the values as needed
 
-"<CAMWIDTH>320</CAMWIDTH>"
-"<CAMHEIGHT>240</CAMHEIGHT>"
-"<FRAMERATE>20</FRAMERATE>
-"<RECIEVEPORT>1234</RECIEVEPORT>"
-"<SENDPORT>1235</SENDPORT>"
-"<SENDIP>127.0.0.1</SENDIP>"
+"\<CAMWIDTH\>320\</CAMWIDTH\>"
+"\<CAMHEIGHT\>240\</CAMHEIGHT\>"
+"\<FRAMERATE\>20\</FRAMERATE\>
+"\<RECIEVEPORT\>1234\</RECIEVEPORT\>"
+"\<SENDPORT\>1235\</SENDPORT\>"
+"\<SENDIP\>127.0.0.1\</SENDIP\>"
 
 
 OSC Controls input
