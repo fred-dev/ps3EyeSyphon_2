@@ -13,6 +13,7 @@ void ofApp::setup(){
     recievePort	= XML.getValue("RECIEVEPORT", 12334);
     sendPort =XML.getValue("SENDPORT", 12335);
     sendIp = XML.getValue("SENDIP", "127.0.0.1");
+    minimised = XML.getValue("MINIMISED", 0);
     
     receiver.setup(recievePort);
     sender.setup(sendIp, sendPort);
@@ -76,12 +77,34 @@ void ofApp::setup(){
     }
     
     camCounter=deviceList.size();
-
+    ofBackground(0, 0, 0);
+    
+    if (!minimised) {
+        if (cameras.size()*camHeight<gui.getShape().height+80) {
+            ofSetWindowShape(gui.getWidth()+80+camWidth * cameras.size(), gui.getShape().height+80);
+        }
+        if (cameras.size()*camHeight>gui.getShape().height+80) {
+            ofSetWindowShape(gui.getWidth()+80+camWidth * cameras.size(), cameras.size()*camHeight);
+        }
+    }
+    if (minimised) {
+        ofSetWindowShape(300, 30);
+    }
     
 }
 
-
+void ofApp::exit(){
+    
+    for (int i = 0; i < cameras.size(); i++) {
+        cameras[i]->close();
+        textures[i]->~ofTexture();
+        servers[i]->~ofxSyphonServer();
+    }
+    
+    
+}
 void ofApp::update(){
+    
     
 
     
@@ -263,7 +286,7 @@ void ofApp::draw(){
         ofPopStyle();
     }
     if (!minimised) {
-        ofBackground(0, 0, 0);
+        
         ofPushStyle();
         ofSetColor(255, 255, 255);
         if(cameras.size() == 0){
