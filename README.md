@@ -100,3 +100,7 @@ Updates-
 
 
 ** Your graphics card may not be able to deliver 200 fps through syphon and depending on the syphon implementation you use this may be too fast. to save CPU cycles and video memory set a lower framerate in the settings file.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/fred-dev/ps3eyesyphon_2/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
