@@ -14,6 +14,8 @@
 		<string>https://github.com/openframeworks/openFrameworks.git</string>
 		<key>6116060B9B43ED41429AE056D680B0BE4D4D9659</key>
 		<string>https://github.com/bakercp/ofxPS3EyeGrabber.git</string>
+		<key>A6343E16BC2F648D0FEA647FB75CBADE0A25E0B8</key>
+		<string>https://github.com/Flightphase/ofxTextInputField.git</string>
 		<key>D7C7ACF06DE8B6B9DC226B81BD04E2789A1B36A9</key>
 		<string>https://github.com/fred-dev/ps3EyeSyphon_2.git</string>
 		<key>F4CCB893AFADB97238A965FD2F28717F1CAAE613</key>
@@ -27,6 +29,8 @@
 		<string>../..</string>
 		<key>6116060B9B43ED41429AE056D680B0BE4D4D9659</key>
 		<string>../../addons/ofxPS3EyeGrabber</string>
+		<key>A6343E16BC2F648D0FEA647FB75CBADE0A25E0B8</key>
+		<string>../../addons/ofxTextInputField</string>
 		<key>D7C7ACF06DE8B6B9DC226B81BD04E2789A1B36A9</key>
 		<string>..</string>
 		<key>F4CCB893AFADB97238A965FD2F28717F1CAAE613</key>
@@ -63,6 +67,14 @@
 			<string>F4CCB893AFADB97238A965FD2F28717F1CAAE613</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ofxSyphon</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A6343E16BC2F648D0FEA647FB75CBADE0A25E0B8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxTextInputField</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

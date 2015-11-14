@@ -7,6 +7,7 @@
 #include "ofxOsc.h"
 #include "ofxXmlSettings.h"
 #include "camParameterGroup.h"
+#include "ofxTextInputField.h"
 
 
 class ofApp : public ofBaseApp{
@@ -24,16 +25,26 @@ public:
     void windowResized(int w, int h);
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
-    void onAutoGainAndShutterChange(bool & value);
-    void onGainChange(float & value);
-    void onShutterChange(float & value);
-    void onGammaChange(float & value);
-    void onBrightnessChange(float & value);
-    void onContrastChange(float & value);
-    void onHueChange(float & value);
-    void onLedChange(bool & value);
-    void onFlickerChange(int & value);
-    void onWhiteBalanceChange(int & value);
+    
+    
+    void onGainChange(const void * guiSender,int & value);
+    void onShutterChange(const void * guiSender,int & value);
+    void onBrightnessChange(const void * guiSender,int & value);
+    void onContrastChange(const void * guiSender,int & value);
+    void onHueChange(const void * guiSender,int & value);
+    void onLedChange(const void * guiSender,bool & value);
+    void onFlickerChange(const void * guiSender,int & value);
+    void onWhiteBalanceChange(const void * guiSender,int & value);
+    void onSharpnessChanged(const void * guiSender,int & value);
+    void onRedBalanceChanged(const void * guiSender,int & value);
+    void onBlueBalanceChanged(const void * guiSender,int & value);
+    void onGreenBalanceChanged(const void * guiSender,int & value);
+    
+    void onCamDrawChanged(const void * guiSender,bool & value);
+    void onAutoBalanceChanged(const void * guiSender,bool & value);
+    void onFlipVertChanged(const void * guiSender,bool & value);
+    void onFlipHorizChanged(const void * guiSender,bool & value);
+    void onAutoGainAndShutterChange(const void * guiSender,bool & value);
     
     bool bHide;
     
@@ -60,6 +71,15 @@ public:
     ofxOscSender sender;
     string sendIp;
     int sendPort;
+    
+    ofxTextInputField portInputOutgoing;
+    ofxTextInputField portInputIncoming;
+    
+    ofColor drawColour;
+    bool setIncomingPort, setOutGoingPort;
+
+    
+    
     
     
 };

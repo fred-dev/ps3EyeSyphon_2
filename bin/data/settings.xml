@@ -1,33 +1,19 @@
 <settings>
 	<cam_1>
 		<Draw_Cam_1>1</Draw_Cam_1>
-		<Auto_gain_1>0</Auto_gain_1>
-		<Auto_Balance_1>0</Auto_Balance_1>
-		<Flip_Horizontal_1>0</Flip_Horizontal_1>
-		<Flip_Vert_1>0</Flip_Vert_1>
-		<Exposure_1>123</Exposure_1>
-		<Gain_1>9</Gain_1>
-		<Brightness_1>15</Brightness_1>
-		<Sharpness_1>255</Sharpness_1>
-		<Contrast_1>29</Contrast_1>
-		<Red_Balance_1>128</Red_Balance_1>
-		<Blue_Balance_1>128</Blue_Balance_1>
-		<Hue_1>135</Hue_1>
+		<Auto_gain_Cam_1>1</Auto_gain_Cam_1>
+		<Auto_Balance_Cam_1>1</Auto_Balance_Cam_1>
+		<Flip_Horizontal_Cam_1>0</Flip_Horizontal_Cam_1>
+		<Flip_Vert_Cam_1>0</Flip_Vert_Cam_1>
+		<Exposure_Cam_1>120</Exposure_Cam_1>
+		<Gain_Cam_1>20</Gain_Cam_1>
+		<Brightness_Cam_1>20</Brightness_Cam_1>
+		<Sharpness_Cam_1>58</Sharpness_Cam_1>
+		<Contrast_Cam_1>37</Contrast_Cam_1>
+		<Red_Balance_Cam_1>128</Red_Balance_Cam_1>
+		<Blue_Balance_Cam_1>128</Blue_Balance_Cam_1>
+		<Green_Balance_Cam_1>128</Green_Balance_Cam_1>
+		<Hue_Cam_1>143</Hue_Cam_1>
 	</cam_1>
 <settings/>
-<cam_2>
-		<Draw_Cam_2>1</Draw_Cam_2>
-		<Auto_gain_2>1</Auto_gain_2>
-		<Auto_Balance_2>1</Auto_Balance_2>
-		<Flip_Horizontal_2>0</Flip_Horizontal_2>
-		<Flip_Vert_2>0</Flip_Vert_2>
-		<Exposure_2>131</Exposure_2>
-		<Gain_2>12</Gain_2>
-		<Brightness_2>29</Brightness_2>
-		<Sharpness_2>255</Sharpness_2>
-		<Contrast_2>54</Contrast_2>
-		<Red_Balance_2>114</Red_Balance_2>
-		<Blue_Balance_2>120</Blue_Balance_2>
-		<Hue_2>102</Hue_2>
-	</cam_2>
 </settings>

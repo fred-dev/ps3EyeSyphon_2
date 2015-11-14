@@ -26,10 +26,11 @@ void camParameterGroup::setup(int camId){
     parameters.add(camExposure.set("Exposure Cam " + ofToString(camId+1), 120,0,255));
     parameters.add(camGain.set("Gain Cam " + ofToString(camId+1), 20,0,63));
     parameters.add(camBrightness.set("Brightness Cam " + ofToString(camId+1), 20,0,255));
-    parameters.add(camSharpness.set("Sharpness Cam " + ofToString(camId+1), 255,0,255));
+    parameters.add(camSharpness.set("Sharpness Cam " + ofToString(camId+1), 58,0,63));
     parameters.add(camContrast.set("Contrast Cam " + ofToString(camId+1), 37,0,255));
     parameters.add(camRedBalance.set("Red Balance Cam " + ofToString(camId+1), 128,0,255));
     parameters.add(camBlueBalance.set("Blue Balance Cam " + ofToString(camId+1), 128,0,255));
+    parameters.add(camGreenBalance.set("Green Balance Cam " + ofToString(camId+1), 128,0,255));
     parameters.add(camHue.set("Hue Cam " + ofToString(camId+1), 143,0,255));
     
 }

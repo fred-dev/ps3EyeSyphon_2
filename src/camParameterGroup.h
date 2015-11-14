@@ -34,8 +34,10 @@ public:
     ofParameter<int>  camContrast;
     ofParameter<int>  camRedBalance;
     ofParameter<int>  camBlueBalance;
+    ofParameter<int>  camGreenBalance;
     ofParameter<int>  camHue;
     
+
     
 };
 
