@@ -93,7 +93,7 @@ void ofApp::setup(){
         
         cameras[i]->setAutogain(camParams[i].camAutoGain);
         cameras[i]->setAutoWhiteBalance(camParams[i].camAutoBalance);
-        cameras[i]->setFlip(camParams[i].camflipHoriz, camParams[i].camflipVert);
+        //cameras[i]->setFlip(camParams[i].camflipHoriz, camParams[i].camflipVert);
         
     }
     
@@ -145,7 +145,7 @@ void ofApp::exit(){
 
 void ofApp::update(){
 
-    if (!portInputIncoming.getIsEditing()) {
+    if (!portInputIncoming.isEditing()) {
         drawColour.set(0, 0, 0);
     }
     if (camCounter>0) {
@@ -462,7 +462,7 @@ void ofApp::onFlipVertChanged(const void * guiSender,bool & value){
     char lastChar = idName.at( idName.length() - 1 );
     int camIdNumber= ofToInt(ofToString(lastChar))-1;
     
-    cameras[camIdNumber]->setFlip(camParams[camIdNumber].camflipHoriz, camParams[camIdNumber].camflipVert);
+   // cameras[camIdNumber]->setFlip(camParams[camIdNumber].camflipHoriz, camParams[camIdNumber].camflipVert);
     
     ofxOscMessage flipMessage;
     flipMessage.setAddress("/"+ofToString(camIdNumber+1)+"/flip" );
@@ -476,7 +476,7 @@ void ofApp::onFlipHorizChanged(const void * guiSender,bool & value){
     char lastChar = idName.at( idName.length() - 1 );
     int camIdNumber= ofToInt(ofToString(lastChar))-1;
     
-    cameras[camIdNumber]->setFlip(camParams[camIdNumber].camflipHoriz, camParams[camIdNumber].camflipVert);
+   // cameras[camIdNumber]->setFlip(camParams[camIdNumber].camflipHoriz, camParams[camIdNumber].camflipVert);
     
     ofxOscMessage flipMessage;
     flipMessage.setAddress("/"+ofToString(camIdNumber+1)+"/flip" );

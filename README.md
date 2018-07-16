@@ -1,15 +1,15 @@
 # ps3EyeSyphon_2
-Updated App for using multiple PS3Eye cameras with Syphon and OSC on OSX 10.9 and 10.10
+Updated App for using multiple PS3Eye cameras with Syphon and OSC on OSX 10.10 and higher (not tested on 10.13). Current version made with OF 0.1.0
 
 For a precompiled binary visit the releases section of this repo here https://github.com/fred-dev/ps3EyeSyphon_2/releases/tag/0.0.1.beta.1
 
 This version requires 
 
-openframeworks 0.9.0 
+openframeworks 0.1.0
 https://github.com/openframeworks/openFrameworks
 
 ofxPS3EyeGrabber 
-https://github.com/bakercp/ofxPS3EyeGrabber/branches
+https://github.com/bakercp/ofxPS3EyeGrabber
 
 ofxSyhpon
 https://github.com/astellato/ofxSyphon
