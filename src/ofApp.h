@@ -77,6 +77,8 @@ public:
     
     ofColor drawColour;
     bool setIncomingPort, setOutGoingPort;
+    
+    ofJson settings;
 
     
     

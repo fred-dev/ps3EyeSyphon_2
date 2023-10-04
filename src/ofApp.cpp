@@ -6,6 +6,13 @@ void ofApp::setup(){
     minimised=false;
     ofSetVerticalSync(false);
     
+    //load an  file from disk and put it in an ofJson object
+    ofJson json = ofLoadJson("settings.json");
+    
+    
+    
+    
+    
     XML.loadFile("cameraSettings.xml");
     camWidth		= XML.getValue("CAMWIDTH", 640);
     camHeight	= XML.getValue("CAMHEIGHT", 480);
