@@ -1,0 +1,9 @@
+{
+  "CAMWIDTH": 320,
+  "CAMHEIGHT": 240,
+  "FRAMERATE": 200,
+  "RECIEVEPORT": 12334,
+  "SENDPORT": 12335,
+  "SENDIP": "127.0.0.1",
+  "MINIMISED": true
+}

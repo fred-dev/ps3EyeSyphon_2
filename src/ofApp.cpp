@@ -7,20 +7,30 @@ void ofApp::setup(){
     ofSetVerticalSync(false);
     
     //load an  file from disk and put it in an ofJson object
-    ofJson json = ofLoadJson("settings.json");
-    
-    
-    
-    
-    
-    XML.loadFile("cameraSettings.xml");
-    camWidth		= XML.getValue("CAMWIDTH", 640);
-    camHeight	= XML.getValue("CAMHEIGHT", 480);
-    frameRate	= XML.getValue("FRAMERATE", 60);
-    recievePort	= XML.getValue("RECIEVEPORT", 12334);
-    sendPort =XML.getValue("SENDPORT", 12335);
-    sendIp = XML.getValue("SENDIP", "127.0.0.1");
-    minimised = XML.getValue("MINIMISED", 0);
+	ofLogVerbose() << "Loading settings from settings.json...";
+	ofJson json = ofLoadJson("settings.json");
+
+	camWidth = (json.contains("CAMWIDTH") && !json["CAMWIDTH"].is_null()) ? json["CAMWIDTH"].get<int>() : 640;
+	ofLogVerbose() << "CAMWIDTH: " << camWidth;
+
+	camHeight = (json.contains("CAMHEIGHT") && !json["CAMHEIGHT"].is_null()) ? json["CAMHEIGHT"].get<int>() : 480;
+	ofLogVerbose() << "CAMHEIGHT: " << camHeight;
+
+	frameRate = (json.contains("FRAMERATE") && !json["FRAMERATE"].is_null()) ? json["FRAMERATE"].get<int>() : 60;
+	ofLogVerbose() << "FRAMERATE: " << frameRate;
+
+	recievePort = (json.contains("RECIEVEPORT") && !json["RECIEVEPORT"].is_null()) ? json["RECIEVEPORT"].get<int>() : 12334;
+	ofLogVerbose() << "RECIEVEPORT: " << recievePort;
+
+	sendPort = (json.contains("SENDPORT") && !json["SENDPORT"].is_null()) ? json["SENDPORT"].get<int>() : 12335;
+	ofLogVerbose() << "SENDPORT: " << sendPort;
+
+	sendIp = (json.contains("SENDIP") && !json["SENDIP"].is_null()) ? json["SENDIP"].get<std::string>() : "127.0.0.1";
+	ofLogVerbose() << "SENDIP: " << sendIp;
+
+	minimised = (json.contains("MINIMISED") && !json["MINIMISED"].is_null()) ? json["MINIMISED"].get<bool>() : false;
+	ofLogVerbose() << "MINIMISED: " << minimised;
+
     
     receiver.setup(recievePort);
     sender.setup(sendIp, sendPort);
