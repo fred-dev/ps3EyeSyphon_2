@@ -1,8 +1,5 @@
 ofxGui
-ofxKinect
-ofxOpenCv
 ofxOsc
 ofxPS3EyeGrabber
 ofxSyphon
-ofxTextInputField
 ofxXmlSettings

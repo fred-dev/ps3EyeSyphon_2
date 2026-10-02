@@ -6,5 +6,5 @@ Successor to an earlier multi-camera PS3 Eye Syphon tool (2012-2018), updated in
 
 ## Build
 
-- Addons: `ofxGui`, `ofxOsc`, `ofxKinect`, `ofxOpenCv`, `ofxPS3EyeGrabber`, `ofxSyphon`, `ofxXmlSettings`
+- Addons: `ofxGui`, `ofxOsc`, `ofxPS3EyeGrabber`, `ofxSyphon`, `ofxXmlSettings`
 - Generate the project with projectGenerator (macOS only, because of Syphon).
